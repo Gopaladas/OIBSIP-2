@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>cricket</title>
+    <link rel="stylesheet" href="cric.css">
+    <style>
+        @media screen and (max-width:1000px) {
+            .maintext {
+                font-size: 2rem;
+            }
+            .hit--btn {
+                top: 45rem;
+                left: 38%;
+            }
+            .player-img {
+                height: 150px;
+                width: 100px;
+            }
+            .winnercard {
+                top: 30%;
+                left: 12%;
+            }
+            .scorecard {
+                width: 17rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="player activeplayer bat">
+            <h1 class="maintext">Batting</h1>
+            <img src="hand--6.png" id="bat--img" class="player-img">
+            <h2 class="score-text batscore--text">0</h2>
+            <div class="scorecard">
+                <h3 class="batsman-subtext">batsman-score</h3>
+                <h2 class="batsman-score">0</h2>
+            </div>
+        </section>
+        <section class="player bowler bowl">
+            <h1 class="maintext">Bowling</h1>
+            <img src="hand--1.png" id="bowl--img" class="player-img bat">
+            <h2 class="score-text bowlscore--text">0</h2>
+        </section>
+        <button class="hit--btn btn">hit-the-ball</button>
+    </main>
+    <div class="winnercard">
+        <div class="score">
+            <button class="new--btn btn">new game</button>
+
+            <h1 class="winner--name">the score</h1>
+            <p class="winner-score">0</p>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <script src="cric.js"></script>
+</body>
+
+</html>
