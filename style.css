@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+/*    font-size:20px;*/
+    background-color: black;
+    color:white;
+}
+
+.primary-btn{
+    background-color: black;
+    color:white;
+    font-size:20px;
+
+}
+
+.primary-btn:hover{
+    background-color:powderblue;
+    color:black;
+    padding:10px;
+}
+
+.secondary-btn{
+    background-color: powderblue;
+    color:black;
+    font-size:20px;
+    padding:10px;
+    border-radius:5px;
+}
+
+.secondary-btn:hover{
+    box-shadow:1px 1px 3px 6px rgba(255,255,255,0.5);
+}
+
+
+header {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 88px;
+    padding: 0 25px;
+}
+
+.logo_img{
+    color:white;
+    position:relative;
+    left:20px;
+}
+
+nav ul {
+    height: 58px;
+    display: flex;
+    margin:auto;
+/*    padding:40px;*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 400px;
+    height: 23px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 0px 15px;
+}
+
+.btn {
+    height: 26px;
+    background-color: #2870f0;
+    border: 2px solid white;
+    padding: 5px;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.container {
+    max-width:1100;
+    margin:auto;
+    padding:0 20px;
+}
+
+.main_section{
+    height:500px;
+}
+
+.name{
+    color:lightgreen;
+    font-size:30px;
+    font-weight: bolder;
+}
+
+.section_1{
+    height:500px;
+}
+
+.left{
+/*    border:2px solid white;*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.right{
+/*    border:2px  solid white;*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.skills{
+/*    border:2px  solid white;*/
+    height:400px;
+    position:relative;
+    top:50px;
+}
+
+.skill_text{
+    text-align: center;
+     padding:50px;
+     background-color: lightgreen;
+}
+
+.box{
+    /*display:flex;
+    justidy-content:center;
+    align-items:center;*/
+    position:relative;
+    left:200px;
+}
+
+.skill{
+    padding:40px;
+}
+
+.skill_grid{
+    display:grid;
+    grid-template-columns: repeat(3, 0.3fr);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+footer {
+    height: 12vh;
+    background-color: black;
+    color: white;
+    
+}
